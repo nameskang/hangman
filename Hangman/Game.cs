@@ -65,8 +65,7 @@ namespace Hangman
             {
                 gameover = true;
             }
-            string toCheck = new string(this.revealer);
-            if (!toCheck.Contains('_'))
+            if (!this.revealer.Contains('_'))
             {
                 gameover = true;
                 win = true;
